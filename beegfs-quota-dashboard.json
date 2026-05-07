@@ -3,7 +3,10 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": { "type": "datasource", "uid": "grafana" },
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -16,40 +19,67 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 1,
-  "id": null,
+  "id": 34,
   "links": [],
   "panels": [
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "thresholds" },
+          "color": {
+            "mode": "thresholds"
+          },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
-              { "color": "green", "value": null },
-              { "color": "red", "value": 1 }
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
             ]
           },
           "unit": "short"
         },
         "overrides": []
       },
-      "gridPos": { "h": 4, "w": 4, "x": 0, "y": 0 },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 0,
+        "y": 0
+      },
       "id": 1,
       "options": {
         "colorMode": "background",
         "graphMode": "none",
         "justifyMode": "center",
         "orientation": "auto",
-        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
-        "textMode": "auto"
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "expr": "count(beegfs_quota_space_exceeded == 1)",
           "legendFormat": "",
           "refId": "A"
@@ -59,36 +89,63 @@
       "type": "stat"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "thresholds" },
+          "color": {
+            "mode": "thresholds"
+          },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
-              { "color": "green", "value": null },
-              { "color": "red", "value": 1 }
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
             ]
           },
           "unit": "short"
         },
         "overrides": []
       },
-      "gridPos": { "h": 4, "w": 4, "x": 4, "y": 0 },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 4,
+        "y": 0
+      },
       "id": 2,
       "options": {
         "colorMode": "background",
         "graphMode": "none",
         "justifyMode": "center",
         "orientation": "auto",
-        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
-        "textMode": "auto"
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "expr": "count(beegfs_quota_inode_exceeded == 1)",
           "legendFormat": "",
           "refId": "A"
@@ -98,36 +155,63 @@
       "type": "stat"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "thresholds" },
+          "color": {
+            "mode": "thresholds"
+          },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
-              { "color": "red", "value": null },
-              { "color": "green", "value": 1 }
+              {
+                "color": "red"
+              },
+              {
+                "color": "green",
+                "value": 1
+              }
             ]
           },
           "unit": "short"
         },
         "overrides": []
       },
-      "gridPos": { "h": 4, "w": 4, "x": 8, "y": 0 },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 8,
+        "y": 0
+      },
       "id": 3,
       "options": {
         "colorMode": "background",
         "graphMode": "none",
         "justifyMode": "center",
         "orientation": "auto",
-        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
-        "textMode": "auto"
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "expr": "beegfs_quota_scrape_success",
           "legendFormat": "",
           "refId": "A"
@@ -137,37 +221,67 @@
       "type": "stat"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "thresholds" },
+          "color": {
+            "mode": "thresholds"
+          },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
-              { "color": "green", "value": null },
-              { "color": "yellow", "value": 5 },
-              { "color": "red", "value": 10 }
+              {
+                "color": "green"
+              },
+              {
+                "color": "yellow",
+                "value": 5
+              },
+              {
+                "color": "red",
+                "value": 10
+              }
             ]
           },
           "unit": "s"
         },
         "overrides": []
       },
-      "gridPos": { "h": 4, "w": 4, "x": 12, "y": 0 },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 12,
+        "y": 0
+      },
       "id": 4,
       "options": {
         "colorMode": "value",
         "graphMode": "none",
         "justifyMode": "center",
         "orientation": "auto",
-        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
-        "textMode": "auto"
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "expr": "beegfs_quota_scrape_duration_seconds",
           "legendFormat": "",
           "refId": "A"
@@ -177,39 +291,69 @@
       "type": "stat"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "thresholds" },
+          "color": {
+            "mode": "thresholds"
+          },
           "mappings": [],
+          "max": 1,
+          "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
-              { "color": "green", "value": null },
-              { "color": "yellow", "value": 0.8 },
-              { "color": "red", "value": 0.95 }
+              {
+                "color": "green"
+              },
+              {
+                "color": "yellow",
+                "value": 0.8
+              },
+              {
+                "color": "red",
+                "value": 0.95
+              }
             ]
           },
-          "unit": "percentunit",
-          "min": 0,
-          "max": 1
+          "unit": "percentunit"
         },
         "overrides": []
       },
-      "gridPos": { "h": 4, "w": 8, "x": 16, "y": 0 },
+      "gridPos": {
+        "h": 4,
+        "w": 8,
+        "x": 16,
+        "y": 0
+      },
       "id": 5,
       "options": {
         "colorMode": "background",
         "graphMode": "none",
         "justifyMode": "center",
         "orientation": "auto",
-        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
-        "textMode": "auto"
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "expr": "topk(1, beegfs_quota_space_used_bytes / beegfs_quota_space_limit_bytes > 0)",
           "legendFormat": "{{unix_group}} / {{pool}}",
           "refId": "A"
@@ -220,17 +364,27 @@
     },
     {
       "collapsed": false,
-      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 4 },
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 4
+      },
       "id": 10,
       "panels": [],
       "title": "Space Quota",
       "type": "row"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "palette-classic" },
+          "color": {
+            "mode": "palette-classic"
+          },
           "custom": {
             "axisBorderShow": false,
             "axisCenteredZero": false,
@@ -242,45 +396,100 @@
             "drawStyle": "line",
             "fillOpacity": 10,
             "gradientMode": "none",
-            "hideFrom": { "legend": false, "tooltip": false, "viz": false },
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
             "insertNulls": false,
             "lineInterpolation": "linear",
             "lineWidth": 1,
             "pointSize": 5,
-            "scaleDistribution": { "type": "linear" },
+            "scaleDistribution": {
+              "type": "linear"
+            },
             "showPoints": "never",
             "spanNulls": false,
-            "stacking": { "group": "A", "mode": "none" },
-            "thresholdsStyle": { "mode": "off" }
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
           },
           "mappings": [],
           "min": 0,
           "thresholds": {
             "mode": "absolute",
-            "steps": [{ "color": "green" }]
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
           },
           "unit": "bytes"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "beegfs_quota_space_used_bytes {__name__=\"beegfs_quota_space_used_bytes\", cluster=\"hpc\", environment=\"production\", exported_group=\"ajegujam\", gid=\"529000485\", group=\"login-nodes\", instance=\"login02.m.hpc.zhaw.ch:9742\", job=\"beegfsquota-exporter\", monitor=\"earth-cluster\", pool=\"storage_pool_default\"}"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": true
+                }
+              }
+            ]
+          }
+        ]
       },
-      "gridPos": { "h": 9, "w": 12, "x": 0, "y": 5 },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 5
+      },
       "id": 11,
       "options": {
         "legend": {
-          "calcs": ["lastNotNull", "max"],
+          "calcs": [
+            "lastNotNull",
+            "max"
+          ],
           "displayMode": "table",
           "placement": "bottom",
           "showLegend": true
         },
-        "tooltip": { "hideZeros": false, "mode": "multi", "sort": "desc" }
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "desc"
+        }
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_space_used_bytes",
-          "legendFormat": "{{unix_group}} (pool: {{pool}})",
+          "legendFormat": "{{exported_group}}",
           "range": true,
           "refId": "A"
         }
@@ -289,10 +498,15 @@
       "type": "timeseries"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "palette-classic" },
+          "color": {
+            "mode": "palette-classic"
+          },
           "custom": {
             "axisBorderShow": false,
             "axisCenteredZero": false,
@@ -304,45 +518,74 @@
             "drawStyle": "line",
             "fillOpacity": 10,
             "gradientMode": "none",
-            "hideFrom": { "legend": false, "tooltip": false, "viz": false },
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
             "insertNulls": false,
             "lineInterpolation": "linear",
             "lineWidth": 1,
             "pointSize": 5,
-            "scaleDistribution": { "type": "linear" },
+            "scaleDistribution": {
+              "type": "linear"
+            },
             "showPoints": "never",
             "spanNulls": false,
-            "stacking": { "group": "A", "mode": "none" },
-            "thresholdsStyle": { "mode": "off" }
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
           },
           "mappings": [],
           "min": 0,
           "thresholds": {
             "mode": "absolute",
-            "steps": [{ "color": "green" }]
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
           },
           "unit": "bytes"
         },
         "overrides": []
       },
-      "gridPos": { "h": 9, "w": 12, "x": 12, "y": 5 },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 5
+      },
       "id": 12,
       "options": {
         "legend": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "displayMode": "table",
           "placement": "bottom",
           "showLegend": true
         },
-        "tooltip": { "hideZeros": false, "mode": "multi", "sort": "desc" }
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "desc"
+        }
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_space_limit_bytes > 0",
-          "legendFormat": "{{unix_group}} (pool: {{pool}})",
+          "legendFormat": "{{exported_group}}",
           "range": true,
           "refId": "A"
         }
@@ -351,10 +594,15 @@
       "type": "timeseries"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "palette-classic" },
+          "color": {
+            "mode": "palette-classic"
+          },
           "custom": {
             "axisBorderShow": false,
             "axisCenteredZero": false,
@@ -366,50 +614,84 @@
             "drawStyle": "line",
             "fillOpacity": 10,
             "gradientMode": "none",
-            "hideFrom": { "legend": false, "tooltip": false, "viz": false },
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
             "insertNulls": false,
             "lineInterpolation": "linear",
             "lineWidth": 2,
             "pointSize": 5,
-            "scaleDistribution": { "type": "linear" },
+            "scaleDistribution": {
+              "type": "linear"
+            },
             "showPoints": "never",
             "spanNulls": false,
-            "stacking": { "group": "A", "mode": "none" },
-            "thresholdsStyle": { "mode": "line+area" }
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "line+area"
+            }
           },
           "mappings": [],
-          "min": 0,
           "max": 1,
+          "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
-              { "color": "green", "value": null },
-              { "color": "yellow", "value": 0.8 },
-              { "color": "red", "value": 0.95 }
+              {
+                "color": "green"
+              },
+              {
+                "color": "yellow",
+                "value": 0.8
+              },
+              {
+                "color": "red",
+                "value": 0.95
+              }
             ]
           },
           "unit": "percentunit"
         },
         "overrides": []
       },
-      "gridPos": { "h": 9, "w": 24, "x": 0, "y": 14 },
+      "gridPos": {
+        "h": 9,
+        "w": 24,
+        "x": 0,
+        "y": 14
+      },
       "id": 13,
       "options": {
         "legend": {
-          "calcs": ["lastNotNull", "max"],
+          "calcs": [
+            "lastNotNull",
+            "max"
+          ],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
         },
-        "tooltip": { "hideZeros": false, "mode": "multi", "sort": "desc" }
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "desc"
+        }
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_space_used_bytes / beegfs_quota_space_limit_bytes > 0",
-          "legendFormat": "{{unix_group}} (pool: {{pool}})",
+          "legendFormat": "{{exported_group}}",
           "range": true,
           "refId": "A"
         }
@@ -419,17 +701,27 @@
     },
     {
       "collapsed": false,
-      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 23 },
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 23
+      },
       "id": 20,
       "panels": [],
       "title": "Inode Quota",
       "type": "row"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "palette-classic" },
+          "color": {
+            "mode": "palette-classic"
+          },
           "custom": {
             "axisBorderShow": false,
             "axisCenteredZero": false,
@@ -441,45 +733,75 @@
             "drawStyle": "line",
             "fillOpacity": 10,
             "gradientMode": "none",
-            "hideFrom": { "legend": false, "tooltip": false, "viz": false },
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
             "insertNulls": false,
             "lineInterpolation": "linear",
             "lineWidth": 1,
             "pointSize": 5,
-            "scaleDistribution": { "type": "linear" },
+            "scaleDistribution": {
+              "type": "linear"
+            },
             "showPoints": "never",
             "spanNulls": false,
-            "stacking": { "group": "A", "mode": "none" },
-            "thresholdsStyle": { "mode": "off" }
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
           },
           "mappings": [],
           "min": 0,
           "thresholds": {
             "mode": "absolute",
-            "steps": [{ "color": "green" }]
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
           },
           "unit": "short"
         },
         "overrides": []
       },
-      "gridPos": { "h": 9, "w": 12, "x": 0, "y": 24 },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 24
+      },
       "id": 21,
       "options": {
         "legend": {
-          "calcs": ["lastNotNull", "max"],
+          "calcs": [
+            "lastNotNull",
+            "max"
+          ],
           "displayMode": "table",
           "placement": "bottom",
           "showLegend": true
         },
-        "tooltip": { "hideZeros": false, "mode": "multi", "sort": "desc" }
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "desc"
+        }
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_inode_used_total",
-          "legendFormat": "{{unix_group}} (pool: {{pool}})",
+          "legendFormat": "{{exported_group}}",
           "range": true,
           "refId": "A"
         }
@@ -488,10 +810,15 @@
       "type": "timeseries"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "palette-classic" },
+          "color": {
+            "mode": "palette-classic"
+          },
           "custom": {
             "axisBorderShow": false,
             "axisCenteredZero": false,
@@ -503,45 +830,74 @@
             "drawStyle": "line",
             "fillOpacity": 10,
             "gradientMode": "none",
-            "hideFrom": { "legend": false, "tooltip": false, "viz": false },
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
             "insertNulls": false,
             "lineInterpolation": "linear",
             "lineWidth": 1,
             "pointSize": 5,
-            "scaleDistribution": { "type": "linear" },
+            "scaleDistribution": {
+              "type": "linear"
+            },
             "showPoints": "never",
             "spanNulls": false,
-            "stacking": { "group": "A", "mode": "none" },
-            "thresholdsStyle": { "mode": "off" }
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
           },
           "mappings": [],
           "min": 0,
           "thresholds": {
             "mode": "absolute",
-            "steps": [{ "color": "green" }]
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
           },
           "unit": "short"
         },
         "overrides": []
       },
-      "gridPos": { "h": 9, "w": 12, "x": 12, "y": 24 },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 24
+      },
       "id": 22,
       "options": {
         "legend": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "displayMode": "table",
           "placement": "bottom",
           "showLegend": true
         },
-        "tooltip": { "hideZeros": false, "mode": "multi", "sort": "desc" }
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "desc"
+        }
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_inode_limit_total > 0",
-          "legendFormat": "{{unix_group}} (pool: {{pool}})",
+          "legendFormat": "{{exported_group}}",
           "range": true,
           "refId": "A"
         }
@@ -550,10 +906,15 @@
       "type": "timeseries"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "palette-classic" },
+          "color": {
+            "mode": "palette-classic"
+          },
           "custom": {
             "axisBorderShow": false,
             "axisCenteredZero": false,
@@ -565,50 +926,84 @@
             "drawStyle": "line",
             "fillOpacity": 10,
             "gradientMode": "none",
-            "hideFrom": { "legend": false, "tooltip": false, "viz": false },
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
             "insertNulls": false,
             "lineInterpolation": "linear",
             "lineWidth": 2,
             "pointSize": 5,
-            "scaleDistribution": { "type": "linear" },
+            "scaleDistribution": {
+              "type": "linear"
+            },
             "showPoints": "never",
             "spanNulls": false,
-            "stacking": { "group": "A", "mode": "none" },
-            "thresholdsStyle": { "mode": "line+area" }
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "line+area"
+            }
           },
           "mappings": [],
-          "min": 0,
           "max": 1,
+          "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
-              { "color": "green", "value": null },
-              { "color": "yellow", "value": 0.8 },
-              { "color": "red", "value": 0.95 }
+              {
+                "color": "green"
+              },
+              {
+                "color": "yellow",
+                "value": 0.8
+              },
+              {
+                "color": "red",
+                "value": 0.95
+              }
             ]
           },
           "unit": "percentunit"
         },
         "overrides": []
       },
-      "gridPos": { "h": 9, "w": 24, "x": 0, "y": 33 },
+      "gridPos": {
+        "h": 9,
+        "w": 24,
+        "x": 0,
+        "y": 33
+      },
       "id": 23,
       "options": {
         "legend": {
-          "calcs": ["lastNotNull", "max"],
+          "calcs": [
+            "lastNotNull",
+            "max"
+          ],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
         },
-        "tooltip": { "hideZeros": false, "mode": "multi", "sort": "desc" }
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "desc"
+        }
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_inode_used_total / beegfs_quota_inode_limit_total > 0",
-          "legendFormat": "{{unix_group}} (pool: {{pool}})",
+          "legendFormat": "{{exported_group}}",
           "range": true,
           "refId": "A"
         }
@@ -618,61 +1013,154 @@
     },
     {
       "collapsed": false,
-      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 42 },
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 42
+      },
       "id": 30,
       "panels": [],
       "title": "Quota Exceeded",
       "type": "row"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "thresholds" },
+          "color": {
+            "mode": "thresholds"
+          },
           "custom": {
             "align": "auto",
-            "cellOptions": { "type": "color-background" },
+            "cellOptions": {
+              "type": "color-background"
+            },
             "inspect": false,
             "minWidth": 50
           },
           "mappings": [
-            { "options": { "0": { "color": "green", "index": 0, "text": "OK" }, "1": { "color": "red", "index": 1, "text": "EXCEEDED" } }, "type": "value" }
+            {
+              "options": {
+                "0": {
+                  "color": "green",
+                  "index": 0,
+                  "text": "OK"
+                },
+                "1": {
+                  "color": "red",
+                  "index": 1,
+                  "text": "EXCEEDED"
+                }
+              },
+              "type": "value"
+            }
           ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
-              { "color": "green", "value": null },
-              { "color": "red", "value": 1 }
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
             ]
           }
         },
         "overrides": [
           {
-            "matcher": { "id": "byName", "options": "Space Used" },
-            "properties": [{ "id": "unit", "value": "bytes" }, { "id": "custom.cellOptions", "value": { "type": "auto" } }]
+            "matcher": {
+              "id": "byName",
+              "options": "Space Used"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "bytes"
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "type": "auto"
+                }
+              }
+            ]
           },
           {
-            "matcher": { "id": "byName", "options": "Space Limit" },
-            "properties": [{ "id": "unit", "value": "bytes" }, { "id": "custom.cellOptions", "value": { "type": "auto" } }]
+            "matcher": {
+              "id": "byName",
+              "options": "Space Limit"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "bytes"
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "type": "auto"
+                }
+              }
+            ]
           },
           {
-            "matcher": { "id": "byName", "options": "Usage %" },
-            "properties": [{ "id": "unit", "value": "percentunit" }, { "id": "custom.cellOptions", "value": { "type": "auto" } }]
+            "matcher": {
+              "id": "byName",
+              "options": "Usage %"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "type": "auto"
+                }
+              }
+            ]
           }
         ]
       },
-      "gridPos": { "h": 10, "w": 12, "x": 0, "y": 43 },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 0,
+        "y": 43
+      },
       "id": 31,
       "options": {
         "cellHeight": "sm",
-        "footer": { "countRows": false, "fields": "", "reducer": ["sum"], "show": false },
+        "footer": {
+          "countRows": false,
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
         "showHeader": true,
-        "sortBy": [{ "desc": true, "displayName": "Usage %" }]
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "Usage %"
+          }
+        ]
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_space_exceeded",
           "format": "table",
@@ -681,7 +1169,10 @@
           "refId": "A"
         },
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_space_used_bytes",
           "format": "table",
@@ -690,7 +1181,10 @@
           "refId": "B"
         },
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_space_limit_bytes",
           "format": "table",
@@ -699,7 +1193,10 @@
           "refId": "C"
         },
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_space_used_bytes / beegfs_quota_space_limit_bytes > 0",
           "format": "table",
@@ -712,13 +1209,24 @@
       "transformations": [
         {
           "id": "joinByField",
-          "options": { "byField": "unix_group", "mode": "outer" }
+          "options": {
+            "byField": "unix_group",
+            "mode": "outer"
+          }
         },
         {
           "id": "filterFieldsByName",
           "options": {
             "include": {
-              "names": ["unix_group", "gid", "pool", "Value #A", "Value #B", "Value #C", "Value #D"]
+              "names": [
+                "unix_group",
+                "gid",
+                "pool",
+                "Value #A",
+                "Value #B",
+                "Value #C",
+                "Value #D"
+              ]
             }
           }
         },
@@ -726,13 +1234,13 @@
           "id": "organize",
           "options": {
             "renameByName": {
-              "unix_group": "Group",
-              "gid": "GID",
-              "pool": "Pool",
               "Value #A": "Exceeded",
               "Value #B": "Space Used",
               "Value #C": "Space Limit",
-              "Value #D": "Usage %"
+              "Value #D": "Usage %",
+              "gid": "GID",
+              "pool": "Pool",
+              "unix_group": "Group"
             }
           }
         }
@@ -740,54 +1248,142 @@
       "type": "table"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
-          "color": { "mode": "thresholds" },
+          "color": {
+            "mode": "thresholds"
+          },
           "custom": {
             "align": "auto",
-            "cellOptions": { "type": "color-background" },
+            "cellOptions": {
+              "type": "color-background"
+            },
             "inspect": false,
             "minWidth": 50
           },
           "mappings": [
-            { "options": { "0": { "color": "green", "index": 0, "text": "OK" }, "1": { "color": "red", "index": 1, "text": "EXCEEDED" } }, "type": "value" }
+            {
+              "options": {
+                "0": {
+                  "color": "green",
+                  "index": 0,
+                  "text": "OK"
+                },
+                "1": {
+                  "color": "red",
+                  "index": 1,
+                  "text": "EXCEEDED"
+                }
+              },
+              "type": "value"
+            }
           ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
-              { "color": "green", "value": null },
-              { "color": "red", "value": 1 }
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
             ]
           }
         },
         "overrides": [
           {
-            "matcher": { "id": "byName", "options": "Inodes Used" },
-            "properties": [{ "id": "unit", "value": "short" }, { "id": "custom.cellOptions", "value": { "type": "auto" } }]
+            "matcher": {
+              "id": "byName",
+              "options": "Inodes Used"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "type": "auto"
+                }
+              }
+            ]
           },
           {
-            "matcher": { "id": "byName", "options": "Inode Limit" },
-            "properties": [{ "id": "unit", "value": "short" }, { "id": "custom.cellOptions", "value": { "type": "auto" } }]
+            "matcher": {
+              "id": "byName",
+              "options": "Inode Limit"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "type": "auto"
+                }
+              }
+            ]
           },
           {
-            "matcher": { "id": "byName", "options": "Usage %" },
-            "properties": [{ "id": "unit", "value": "percentunit" }, { "id": "custom.cellOptions", "value": { "type": "auto" } }]
+            "matcher": {
+              "id": "byName",
+              "options": "Usage %"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "type": "auto"
+                }
+              }
+            ]
           }
         ]
       },
-      "gridPos": { "h": 10, "w": 12, "x": 12, "y": 43 },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 12,
+        "y": 43
+      },
       "id": 32,
       "options": {
         "cellHeight": "sm",
-        "footer": { "countRows": false, "fields": "", "reducer": ["sum"], "show": false },
+        "footer": {
+          "countRows": false,
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
         "showHeader": true,
-        "sortBy": [{ "desc": true, "displayName": "Usage %" }]
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "Usage %"
+          }
+        ]
       },
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_inode_exceeded",
           "format": "table",
@@ -796,7 +1392,10 @@
           "refId": "A"
         },
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_inode_used_total",
           "format": "table",
@@ -805,7 +1404,10 @@
           "refId": "B"
         },
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_inode_limit_total",
           "format": "table",
@@ -814,7 +1416,10 @@
           "refId": "C"
         },
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_inode_used_total / beegfs_quota_inode_limit_total > 0",
           "format": "table",
@@ -827,13 +1432,24 @@
       "transformations": [
         {
           "id": "joinByField",
-          "options": { "byField": "unix_group", "mode": "outer" }
+          "options": {
+            "byField": "unix_group",
+            "mode": "outer"
+          }
         },
         {
           "id": "filterFieldsByName",
           "options": {
             "include": {
-              "names": ["unix_group", "gid", "pool", "Value #A", "Value #B", "Value #C", "Value #D"]
+              "names": [
+                "unix_group",
+                "gid",
+                "pool",
+                "Value #A",
+                "Value #B",
+                "Value #C",
+                "Value #D"
+              ]
             }
           }
         },
@@ -841,13 +1457,13 @@
           "id": "organize",
           "options": {
             "renameByName": {
-              "unix_group": "Group",
-              "gid": "GID",
-              "pool": "Pool",
               "Value #A": "Exceeded",
               "Value #B": "Inodes Used",
               "Value #C": "Inode Limit",
-              "Value #D": "Usage %"
+              "Value #D": "Usage %",
+              "gid": "GID",
+              "pool": "Pool",
+              "unix_group": "Group"
             }
           }
         }
@@ -856,44 +1472,77 @@
     },
     {
       "collapsed": false,
-      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 53 },
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 53
+      },
       "id": 40,
       "panels": [],
       "title": "Current Usage Snapshot (Bar Gauge)",
       "type": "row"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
             "mode": "continuous-GrYlRd"
           },
           "mappings": [],
-          "min": 0,
           "max": 1,
+          "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
-              { "color": "green", "value": null },
-              { "color": "yellow", "value": 0.8 },
-              { "color": "red", "value": 0.95 }
+              {
+                "color": "green"
+              },
+              {
+                "color": "yellow",
+                "value": 0.8
+              },
+              {
+                "color": "red",
+                "value": 0.95
+              }
             ]
           },
           "unit": "percentunit"
         },
         "overrides": []
       },
-      "gridPos": { "h": 10, "w": 12, "x": 0, "y": 54 },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 0,
+        "y": 54
+      },
       "id": 41,
       "options": {
         "displayMode": "gradient",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
         "maxVizHeight": 300,
         "minVizHeight": 16,
         "minVizWidth": 8,
         "namePlacement": "auto",
         "orientation": "horizontal",
-        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
         "showUnfilled": true,
         "sizing": "auto",
         "valueMode": "color"
@@ -901,7 +1550,10 @@
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_space_used_bytes / beegfs_quota_space_limit_bytes > 0",
           "instant": true,
@@ -913,37 +1565,65 @@
       "type": "bargauge"
     },
     {
-      "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "berepsigcy9dse"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
             "mode": "continuous-GrYlRd"
           },
           "mappings": [],
-          "min": 0,
           "max": 1,
+          "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
-              { "color": "green", "value": null },
-              { "color": "yellow", "value": 0.8 },
-              { "color": "red", "value": 0.95 }
+              {
+                "color": "green"
+              },
+              {
+                "color": "yellow",
+                "value": 0.8
+              },
+              {
+                "color": "red",
+                "value": 0.95
+              }
             ]
           },
           "unit": "percentunit"
         },
         "overrides": []
       },
-      "gridPos": { "h": 10, "w": 12, "x": 12, "y": 54 },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 12,
+        "y": 54
+      },
       "id": 42,
       "options": {
         "displayMode": "gradient",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
         "maxVizHeight": 300,
         "minVizHeight": 16,
         "minVizWidth": 8,
         "namePlacement": "auto",
         "orientation": "horizontal",
-        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
         "showUnfilled": true,
         "sizing": "auto",
         "valueMode": "color"
@@ -951,7 +1631,10 @@
       "pluginVersion": "12.0.0",
       "targets": [
         {
-          "datasource": { "type": "prometheus", "uid": "berepsigcy9dse" },
+          "datasource": {
+            "type": "prometheus",
+            "uid": "berepsigcy9dse"
+          },
           "editorMode": "code",
           "expr": "beegfs_quota_inode_used_total / beegfs_quota_inode_limit_total > 0",
           "instant": true,
@@ -963,14 +1646,24 @@
       "type": "bargauge"
     }
   ],
+  "preload": false,
   "refresh": "1m",
-  "schemaVersion": 39,
-  "tags": ["beegfs", "quota", "storage"],
-  "templating": { "list": [] },
-  "time": { "from": "now-24h", "to": "now" },
+  "schemaVersion": 41,
+  "tags": [
+    "beegfs",
+    "quota",
+    "storage"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-24h",
+    "to": "now"
+  },
   "timepicker": {},
   "timezone": "browser",
   "title": "BeeGFS Quota",
   "uid": "beegfs-quota",
-  "version": 1
+  "version": 3
 }
